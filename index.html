@@ -55,12 +55,12 @@
     </div>
 
 
-    <div class="discover m-16">
+    <div class="discover m-16 flex flex-col ">
 
         <h1 class="text-5xl font-semibold w-[60%]">Discover why millions of entrepreneurs choose Shopify to build their business—from Hello World to IPO.</h1>
 
-        <div>
-            <img src="/assets/buddies.png" alt="">
+        <div class="w-[100%]">
+            <img class="p-10 mx-auto" src="/assets/buddies.png" alt="">
         </div>
 
         <div class="cards my-10 flex justify-between">
@@ -188,30 +188,31 @@
 
         <div class="left w-[50%] py-20 pl-20">
             <h1 class="text-5xl font-semibold">The help you need, <br> when you need it</h1>
-            <div class="cards">
-                <div class="card">
-                    <h1>Shopify Blog</h1>
-                    <p class="detail">Get all the marketing and business strategy tips you need to help you run an online business.</p>
-                    <p>Read</p>
+            <div class="cards flex flex-wrap justify-between">
+                <div class="card w-[300px] my-6">
+                    <h1 class="font-semibold text-lg">Shopify Blog</h1>
+                    <p class="detail text-gray-600 text-lg mt-4">Get all the marketing and business strategy tips you need to help you run an online business.</p>
+                    <p class="my-4 font-semibold text-lg text-[#008070]">Read</p>
                 </div>
         
-                <div class="card">
-                    <h1>Online Courses</h1>
-                    <p class="detail">Learn from the best with instant access to lessons from successful entrepreneurs around the world.</p>
-                    <p>Learn</p>
+                <div class="card w-[300px] my-6">
+                    <h1  class="font-semibold text-lg">Online Courses</h1>
+                    <p class="detail  text-gray-600 text-lg mt-4">Learn from the best with instant access to lessons from successful entrepreneurs around the world.</p>
+                    <p class="my-4 font-semibold text-lg text-[#008070]">Learn</p>
                 </div>
         
-                <div class="card">
-                    <h1>Our Community</h1>
-                    <p class="detail">Connect with a community of brands, partners, and fellow merchants who understand Shopify.</p>
-                    <p>Learn</p>
+                <div class="card w-[300px]">
+                    <h1  class="font-semibold text-lg">Our Community</h1>
+                    <p class="detail  text-gray-600 text-lg mt-4">Connect with a community of brands, partners, and fellow merchants who understand Shopify.</p>
+                    <p class="my-4 font-semibold text-lg text-[#008070]">Learn</p>
                 </div>
         
-                <div class="card">
-                    <h1>Help Center</h1>
-                    <p class="detail">Find answers in a flash with your dedicated resource for articles and videos from our Support team.</p>
-                    <p>Learn</p>
+                <div class="card w-[300px]">
+                    <h1  class="font-semibold text-lg">Help Center</h1>
+                    <p class="detail  text-gray-600 text-lg mt-4">Find answers in a flash with your dedicated resource for articles and videos from our Support team.</p>
+                    <p class="my-4 font-semibold text-lg text-[#008070]">Get Help</p>
                 </div>
+
             </div>
             
          </div>
@@ -222,14 +223,15 @@
 
     </div>
 
-    <div class="grow">
-        <h1>Grow your business here</h1>
-        <p>Whether you want to sell products down the street or around the world, we have all the tools you need.</p>
-        <button>Start free trial</button>
+    <div class="grow flex flex-col items-center my-16">
+        <h1 class="font-semibold text-4xl">Grow your business here</h1>
+        <p class="text-gray-700 text-xl my-5">Whether you want to sell products down the street or around the world, we have all the tools you need.</p>
+        <button class="bg-[#008060] rounded-md py-3 px-8 font-semibold text-white">Start free trial</button>
     </div>
 
-    <div class="end bg-[#004c3f] text-white">
-        <div class="about flex">
+    <div class="end bg-[#004c3f] text-white list-none">
+
+        <div class="about flex space-x-8 font-semibold text-lg mx-16 py-3">
             <li>About</li>
             <li>Careers</li>
             <li>Press and Media</li>
@@ -237,10 +239,10 @@
             <li>Sitemap</li>
         </div>
 
-        <div class="tabs flex">
+        <div class="tabs flex mx-16 my-4 justify-between">
 
             <div class="online">
-                <li>ONLINE STORE</li>
+                <li class="font-bold">ONLINE STORE</li>
                 <li>Sell online</li>
                 <li>Examples</li>
                 <li>Website builder</li>
@@ -248,7 +250,7 @@
             </div>
 
             <div class="online">
-                <li>ONLINE STORE</li>
+                <li class="invisible">test </li>
                 <li>Ecommerce website</li>
                 <li>Domain names</li>
                 <li>Shopping cart</li>
@@ -256,7 +258,7 @@
             </div>
 
             <div class="online">
-                <li>ONLINE STORE</li>
+                <li class="invisible">ONLINE STORE</li>
                 <li>Mobile commerce</li>
                 <li>Online store builder</li>
                 <li>Dropshipping Business</li>
@@ -264,14 +266,14 @@
             </div>
 
             <div class="online">
-                <li>POINT OF SALE</li>
+                <li class="font-bold">POINT OF SALE</li>
                 <li>Point of sale</li>
                 <li>Features</li>
                 <li>Hardware</li>
             </div>
 
             <div class="online">
-                <li>SUPPORT</li>
+                <li class="font-bold">SUPPORT</li>
                 <li>24/7 support</li>
                 <li>Shopify Community</li>
                 <li>API documentation</li>
@@ -285,7 +287,7 @@
             </div>
 
             <div class="online">
-                <li>SHOPIFY</li>
+                <li class="font-bold">SHOPIFY</li>
                 <li>Contact</li>
                 <li>Partner Program</li>
                 <li>Affiliate program</li>
@@ -299,11 +301,19 @@
         
         <hr>
 
-        <div class="icons-terms">
-            <div class="icons">
-
+        <div class="icons-terms flex justify-between">
+            <div class="icons flex my-4 mx-6">
+                <div class="flex self-start space-x-4">
+                    <img src="/assets/facebook(1).png" alt="">
+                    <img src="/assets/twitter(1).png" alt="">
+                    <img src="/assets/youtube.png" alt="">
+                    <img src="/assets/instagram(1).png" alt="">
+                    <img src="/assets/linkedin.png" alt="">
+                    <img src="/assets/pinterest-circular-logo-symbol.png" alt="">
+                </div>
+               
             </div>
-            <div>
+            <div class="flex space-x-6 my-6 mx-6">
                 <li>Terms of Service</li>
                 <li>Privacy Policy</li>
                 <li>USA</li>
